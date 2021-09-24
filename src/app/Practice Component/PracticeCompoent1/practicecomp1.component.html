@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-7">
+        <div class="form-group">
+            <label>Account Name:</label>
+            <input type="text" class="form-control" #accName><br>
+            <label>Status:</label>
+            <select class="form-control" #status>
+                <option value='Active'>Active</option>
+                <option value='Inactive'>Inactive</option>
+                <option value='Unknown'>Unknown</option>
+            </select><br>
+            <button class="btn btn-primary" (click)="onAccountCreated(accName.value,status.value)">Add User</button>
+        </div>
+    </div>
+</div>
