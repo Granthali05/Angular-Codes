@@ -1,0 +1,12 @@
+<!-- <h1>Practicing Section 7</h1> -->
+<h1> Practicing Section:9</h1>
+<div>
+    <practicecomp1 (accountAdded)="onAccountAdded($event)"></practicecomp1>
+    <hr>
+ <practiceComp2 *ngFor="let acc of Accounts;let i=index" 
+    [Account]="acc" [id]="i" (statusChanged)="onStatusChanged($event)">
+
+<!-- <practiceComp2></practiceComp2> -->
+</practiceComp2>
+  
+</div>
